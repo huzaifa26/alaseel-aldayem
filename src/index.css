@@ -1,5 +1,15 @@
+:root {
+  --blue: #00388B;
+  --gold: #FFCB5B; 
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
+  box-sizing: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

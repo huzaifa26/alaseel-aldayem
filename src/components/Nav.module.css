@@ -1,0 +1,88 @@
+.logoDiv {
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.logoDiv section{
+    width: 90%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons{
+    width: 138px;
+    height: 46px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icons img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    filter: invert(14%) sepia(92%) saturate(2534%) hue-rotate(206deg) brightness(93%) contrast(107%);
+}
+
+.icons img:hover{
+    filter: invert(77%) sepia(8%) saturate(2863%) hue-rotate(351deg) brightness(107%) contrast(103%);
+}
+
+.logoDiv section button{
+    height: 38px;
+    width: 8vw;
+    border-radius: 50px;
+    border: 1px solid var(--blue);
+    background-color: #fff;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.logoDiv section button:hover{
+    height: 38px;
+    width: 8vw;
+    border-radius: 50px;
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.nav{
+    height: 48px;
+    width: 100vw;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav ul{
+    display: flex;
+    width: 26vw;
+    justify-content: space-between;
+}
+
+.nav li{
+    display: flex;
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    padding: 9px;
+}
+
+.nav li .p{
+    color: #fff !important;
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+.nav li:hover{
+    color: var(--gold);
+}
