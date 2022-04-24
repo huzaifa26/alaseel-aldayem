@@ -1,0 +1,9 @@
+.productsDiv{
+    width: 85vw;
+    position: relative;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}

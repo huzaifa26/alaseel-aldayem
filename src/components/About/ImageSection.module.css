@@ -1,0 +1,30 @@
+.ImageSection{
+    width: 100%;
+    min-width: calc(100vw - 100%);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImageSection img{
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ImageSection h1{
+    position: absolute;
+    color: white;
+    z-index: 222;
+}
+
+.row{
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    min-width: calc(100vw - 100%);
+    height: 50vh;
+    overflow: hidden;
+    position: absolute;
+    z-index: 22;
+}

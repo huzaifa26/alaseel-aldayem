@@ -1,5 +1,7 @@
 .FoodProduct{
-    width: 100vw;
+    /* width: 100vw; */
+    min-width: calc(100vw - 100%);
+
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
@@ -7,7 +9,7 @@
 
 .FoodProduct > div{
     width: 82vw;
-    height: 80vh;
+    height: auto;
     display: flex;
     justify-content: center;
 }
@@ -19,6 +21,7 @@
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
+    min-width: 250px;
 }
 
 .FoodProduct > div > div:nth-child(1) h2{
@@ -33,7 +36,7 @@
     text-align: center;
 }
 
-.FoodProduct > div div:nth-child(2){
+.FoodProduct > div > div:nth-child(2){
     flex:1;
     margin-left: 10px;
 }
@@ -50,7 +53,52 @@
 
 .FoodProduct > div div:nth-child(2) div{
     margin-top: 10px;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 15px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .FoodProduct > div div:nth-child(2) div{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .FoodProduct > div div:nth-child(2) div{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    .FoodProduct > div div:nth-child(2) div{
+        grid-template-columns: auto auto auto;
+    }
+    .FoodProduct > div{
+        flex-direction: column;
+    }
+
+    .FoodProduct > div > div:nth-child(1){
+        background-color: var(--blue);
+        width: 82vw;
+        height: 200px;
+        align-items: center;
+        border-radius: 20px;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .FoodProduct > div > div:nth-child(1) h2{
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .FoodProduct > div div:nth-child(2) div{
+        grid-template-columns: auto auto;
+    }
 }

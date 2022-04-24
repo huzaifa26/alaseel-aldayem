@@ -1,8 +1,10 @@
 import Card from "./Card";
 import { Link } from "react-router-dom";
-import styles from "./FoodProduct.module.css"
+import styles from "./FoodProduct.module.css";
 
 function FoodProduct(props) {
+
+
 
     return ( 
     <div className={styles.FoodProduct}>
@@ -16,7 +18,9 @@ function FoodProduct(props) {
                 <div>
                 {props.foodProduct.cardsData.map((data)=>{
                     return(
+                        <>
                         <Card data={data}/>
+                        </>
                     )
                 })}
                 </div>

@@ -1,10 +1,10 @@
 .Footer{
-    width: 100vw;
     height:90px;
     background-color: var(--blue);
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: calc(100vw - 100%);
 }
 
 .Footer p{

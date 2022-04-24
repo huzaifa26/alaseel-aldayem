@@ -1,0 +1,114 @@
+.Form{
+    width: 100%;
+    min-width: calc(100vw - 100%);
+    display: flex;
+    margin: 50px 0;
+}
+
+.Form > div{
+    width: 80%;
+    flex: 1;
+}
+
+.Form > form{
+    flex: 1;
+}
+
+.Form > form div{
+    width: 80%;
+}
+
+.Form > div:nth-child(1){
+    background-color: rgb(90, 90, 90);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 100px 0;
+}
+
+.Form h2{
+    color: white;
+    font-size: 28px;
+    overflow-wrap: break-word;
+    margin-left: 30px;
+    width: 40.263vw;
+    min-width: 350px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+.Form p{
+    color: white;
+    margin-left: 30px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.Form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+}
+
+.Form img{
+    width: 20px;
+    margin-right: 15px;
+    filter: invert(14%) sepia(92%) saturate(2534%) hue-rotate(206deg) brightness(93%) contrast(107%);
+}
+
+.Form form label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.Form form div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.Form form div input{
+    height: 30px;
+    width: 100%;
+}
+
+.Form form input{
+    width: 80%;
+    height: 30px;
+}
+
+.Form form textarea{
+    width: 80%;
+    height: 200px;
+}
+
+
+
+.Form form button{
+    width: 20%;
+    height: 40px;
+    background-color: var(--blue);
+    border: 0;
+    border-radius: 5px;
+    font-size:16px;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 786px) {
+
+    .Form{
+        flex-direction: column;
+    }
+
+
+    .Form > div:nth-child(1){
+        width: 100%;
+    }
+}

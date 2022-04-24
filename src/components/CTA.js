@@ -6,7 +6,7 @@ function CTA() {
         <div className={styles.CTA}>
             <div className={styles.container}>
                 <div>
-                    <img />
+                    <img className={styles.firstImage} src="./g-p.png" alt="" />
                     <div>
                         <h2>Food Products</h2>
                         <p>Avail The Best Care From A Variety Of Products, From A Wide Array Of Brands.</p>
@@ -14,7 +14,7 @@ function CTA() {
                     </div>
                 </div>
                 <div>
-                    <img />
+                    <img src="./e-p.png" alt=""/>
                     <div>
                         <h2>Electronic Gadgets</h2>
                         <p>Find best For Your specifications By Shopping From A Wide Selection Of Phones, Tabs And Accessories.</p>
@@ -22,7 +22,7 @@ function CTA() {
                     </div>
                 </div>
                 <div>
-                    <img />
+                    <img src="./shipping.png" alt=""/>
                     <div>
                         <h2>Shipping Service</h2>
                         <p>We have the shipping service for transporting the goods from different places for making the trading simple.</p>

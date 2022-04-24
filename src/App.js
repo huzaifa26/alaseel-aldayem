@@ -9,19 +9,20 @@ import Product from "./pages/Product/Product";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer";
+import Grocery from "./pages/Product/Grocery";
+import Electronic from "./pages/Product/Electronic";
 
 function App() {
   return (
     <div>
         <Nav />
-        {/* <BrowserRouter> */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="about" element={<About />} />
-            <Route path="products" element={<Product />} />
+            <Route path="grocery" element={<Grocery />} />
+            <Route path="electronic" element={<Electronic />} />
             <Route path="contact" element={<Contact />} />
           </Routes>
-        {/* </BrowserRouter>, */}
         <Footer />
     </div>
   );
